@@ -103,9 +103,76 @@ var resultado = preco <= 100 ? "Tá barato1" : "Vish, ta muito caro!";
 //   }else{
 //     // resultado = "Vish, ta muito caro!"
 //  }
-console.log("Preço: R$",preco, "-", resultado);
+console.log("Preço: R$", preco, "-", resultado);
 
 //If ternário com somente uma expressão
-// condição && expressão 
+// condição && expressão
 var logado = true;
 logado && console.log("Usuário está logado!");
+
+//Desvio condicional - Switch Case
+console.log(
+  "--------------------------------Switch Case--------------------------------"
+);
+switch (0) {
+  case 1:
+    console.log("O usuário digitou o número 1!");
+    break;
+
+  default:
+    console.log("O usúario innformou um número diferente de 1!");
+    break;
+}
+//Menu de seleção
+var menuSelecionado = "Perfil insta";
+
+switch (menuSelecionado) {
+  case "Home":
+    console.log("Você clicou no link 'Home'!");
+    break;
+
+  case "Quem somos":
+    console.log("Você clicou no link 'Quem somo'");
+    break;
+
+  case "Contato":
+    console.log("Você clicou no link 'Contato'");
+    break;
+
+  default:
+    console.log("Opição inválida de menu");
+    break;
+}
+
+//Varias opções com mesmo case - Switch Case
+var mes = 11;
+
+switch (mes) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Primeiro trimestre!");
+    break;
+
+  case 4:
+  case 5:
+  case 6:
+    console.log("Segundo trimestre!");
+    break;
+
+  case 7:
+  case 8:
+  case 9:
+    console.log("Terceiro trimestre!");
+    break;
+
+  case 10:
+  case 11:
+  case 12:
+    console.log("Quarto trimestre!");
+    break;
+
+  default:
+    console.log("Mês invalido");
+    break;
+}
